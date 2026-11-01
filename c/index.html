@@ -343,8 +343,6 @@ p,li,blockquote,dd{text-wrap:pretty}
 </head>
 <body>
 <a class="skip" href="#main">Aller au contenu</a>
-<div style="position:fixed;left:.75rem;bottom:5.25rem;z-index:9999;max-width:calc(100% - 1.5rem);background:rgba(20,20,20,.88);color:#fff;font:600 12px/1.35 system-ui,sans-serif;padding:.45rem .75rem;border-radius:6px;pointer-events:none" role="note">Maquette de démonstration MonProEnLigne, non officielle : contenu à valider par le club</div>
-<style>@media (min-width:768px){[role=note][style*="Maquette"]{bottom:.75rem!important}}</style>
 <div class="sentinel" id="sentinel" aria-hidden="true"></div>
 
 <header class="hdr">
@@ -716,5 +714,7 @@ p,li,blockquote,dd{text-wrap:pretty}
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script defer src="script.js"></script>
+<div class="demo-note" role="note">Maquette de démonstration MonProEnLigne, non officielle : contenu à valider par le club</div>
+<style>.demo-note{position:relative;z-index:1;background:#141414;color:#fff;font:600 12px/1.4 system-ui,sans-serif;padding:.8rem 1rem 6rem;text-align:center}@media (min-width:768px){.demo-note{position:fixed;left:.75rem;bottom:.75rem;z-index:9999;max-width:24rem;padding:.45rem .75rem;border-radius:6px;text-align:left;background:rgba(20,20,20,.88);pointer-events:none}}</style>
 </body>
 </html>
